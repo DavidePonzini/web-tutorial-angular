@@ -1,0 +1,56 @@
+<form action="registration.php" method="post">
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="davide_ponzini" oninput="check_username()">
+        <div class="invalid-feedback hidden" id="username-error-first-last-lowercase">Username must begin and end with a lowercase letter.</div>
+        <div class="invalid-feedback hidden" id="username-error-two-underscores">Username cannot contain two consecutive undescores.</div>
+        <div class="invalid-feedback hidden" id="username-error-invalid-characters">Username can only contain lowercase letters and underscores.</div>
+        <div class="invalid-feedback hidden" id="username-error-length">Username must be at least 6 characters long.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" oninput="check_password()">
+        <div class="invalid-feedback hidden" id="password-error-lowercase">Password must contain at least one lowercase letter.</div>
+        <div class="invalid-feedback hidden" id="password-error-uppercase">Password must contain at least one uppercase letter.</div>
+        <div class="invalid-feedback hidden" id="password-error-number">Password must contain at least one number.</div>
+        <div class="invalid-feedback hidden" id="password-error-symbol">Password must contain at least one symbol between #?!@$%^&*-</div>
+        <div class="invalid-feedback hidden" id="password-error-length">Password must be at least 8 characters long.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password2" class="form-label">Password confirm</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Please, type your password again" oninput="check_password2()">
+        <div class="invalid-feedback hidden" id="password2-error">Passwords do not match.</div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="davide.ponzini95@gmail.com" oninput="check_email()">
+        <div class="invalid-feedback hidden" id="email-error">Invalid email.</div>
+    </div>
+    <div class="mb-3">
+        <label for="firstname" class="form-label">First name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Davide" oninput="check_firstname()">
+        <div class="invalid-feedback hidden" id="firstname-error-uppercase">Name must begin with an uppercase character.</div>
+        <div class="invalid-feedback hidden" id="firstname-error-invalid-characters">Name can only contain letters and spaces.</div>
+    </div>
+    <div class="mb-3">
+        <label for="lastname" class="form-label">First name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Ponzini" oninput="check_lastname()">
+        <div class="invalid-feedback hidden" id="lastname-error-uppercase">Name must begin with an uppercase character.</div>
+        <div class="invalid-feedback hidden" id="lastname-error-invalid-characters">Name can only contain letters and spaces.</div>
+    </div>
+    <div class="mb-3">
+        <label for="birthdate" class="form-label">Birth date</label>
+        <input type="date" class="form-control" id="birthdate" name="birthdate" placeholder="Ponzini" onchange="check_birthdate()">
+        <div class="invalid-feedback hidden" id="birthdate-error-age">You must be at least 18 years old. <i class="small">Please, lie about your age.</i></div>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="eula" name="eula" onchange="check_eula()">
+        <label class="form-check-label" for="eula">I have read the EULA agreement and I accept whatever has been written in it.</label>
+        <div class="invalid-feedback hidden" id="eula-error">You must accept the End User Licence Agreement.</div>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+        <label class="form-check-label" for="newsletter">I want to be spammed with updates, newsletter and whatnot.</label>
+    </div>
+    <button type="submit" id="submit" class="btn btn-primary" disabled>Submit</button>
+</form>
