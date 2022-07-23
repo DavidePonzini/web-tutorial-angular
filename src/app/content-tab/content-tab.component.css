@@ -1,0 +1,16 @@
+.container .content-tab:first-of-type {
+    margin-top: 12px;
+}
+
+.content-tab {
+    border-radius: 12px;
+    background-color: rgba(7, 6, 5, .7);
+    padding: 12px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.content-tab h1 {
+    text-align: center;
+    color: white;
+}

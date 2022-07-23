@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: url(/assets/flat-lay-takeaway-food-wooden-background-delivery-181694373.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+    place-content: center;
+}
+
+.center-y {
+    align-self: center;
+}
+
+.hidden {
+    display: none!important;
+}
+
+i.icon-big {
+    font-size: 150px;
+}
+
+i.icon-gold {
+    color: goldenrod;
+}
+
+
+/* TO BE MOVED */
+
+.slideshow img {
+    border-radius: 70px;
+}
+
+.card {
+    display:inline-block;
+    margin: 12px;
+    word-wrap: normal;
+    vertical-align: top;
+    width:18rem;
+    color: black;
+}
+
+.card .card-text {
+    color: black;
+}
